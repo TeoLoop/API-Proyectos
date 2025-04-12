@@ -25,4 +25,15 @@ public class ProjectController {
         return projectRepository.save(project);
     }
 
+    @PutMapping
+    public void update(@RequestBody Project project){
+        projectRepository.save(project);
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id){
+        projectRepository.deleteById(id);
+    }
+
+
 }
