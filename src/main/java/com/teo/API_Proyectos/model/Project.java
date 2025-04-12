@@ -1,9 +1,8 @@
 package com.teo.API_Proyectos.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 public class Project {
@@ -16,18 +15,20 @@ public class Project {
     private String description;
     private String techs;
     private String link;
-    private String imageUrl;
+
+    @ElementCollection
+    private List<String> imageUrls;
 
     public Project() {
     }
 
-    public Project(Long id, String title, String description, String techs, String link, String imageUrl) {
+    public Project(Long id, String title, String description, String techs, String link, List<String> imageUrls) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.techs = techs;
         this.link = link;
-        this.imageUrl = imageUrl;
+        this.imageUrls = imageUrls;
     }
 
     public Long getId() {
@@ -70,11 +71,11 @@ public class Project {
         this.link = link;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public List<String> getImageUrls() {
+        return imageUrls;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setImageUrls(List<String> imageUrls) {
+        this.imageUrls = imageUrls;
     }
 }

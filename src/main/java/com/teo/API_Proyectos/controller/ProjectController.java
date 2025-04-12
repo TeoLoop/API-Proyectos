@@ -3,10 +3,7 @@ package com.teo.API_Proyectos.controller;
 import com.teo.API_Proyectos.model.Project;
 import com.teo.API_Proyectos.repository.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,6 +18,11 @@ public class ProjectController {
     @GetMapping
     public List<Project> getProjects(){
         return projectRepository.findAll();
+    }
+
+    @PostMapping
+    public Project save(@RequestBody Project project){
+        return projectRepository.save(project);
     }
 
 }
