@@ -17,4 +17,4 @@ RUN ./mvnw clean install
 EXPOSE 8080
 
 # Ejecuta el comando para iniciar la aplicación Java
-CMD ["java", "-jar", "target/your-app.jar"]
+CMD ["java", "-jar", "target/api.jar"]
