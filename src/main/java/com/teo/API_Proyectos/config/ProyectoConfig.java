@@ -20,9 +20,9 @@ public class ProyectoConfig {
                         null,
                         "Chat en tiempo real con React",
                         "Aplicación de mensajería instantánea usando React, WebSockets y Node.js.",
-                        "React, Node.js, Socket.IO",
+                        "React, Tailwind",
                         "https://github.com/TeoLoop/ChatGo-React",
-                        List.of("/chat-react.png")
+                        List.of("/chat-react.png", "/chat-react2.png")
                 );
 
                 Project p2 = new Project(
@@ -38,9 +38,9 @@ public class ProyectoConfig {
                         null,
                         "Carrito de compras con React",
                         "Simulación de un e-commerce con funcionalidad de carrito y filtros.",
-                        "React, Context API",
+                        "React, CSS, Fake Store API",
                         "https://github.com/TeoLoop/ShoppingCart-React",
-                        List.of("/carrito.png")
+                        List.of("/carrito.png", "/carrito2.png")
                 );
 
                 Project p4 = new Project(
@@ -49,7 +49,7 @@ public class ProyectoConfig {
                         "Aplicación de chat desarrollada con Angular y backend con WebSockets.",
                         "Angular, Node.js, Socket.IO",
                         "https://github.com/TeoLoop/ChatGo",
-                        List.of("/chat-angular.png")
+                        List.of("/chat-angular.png", "/chat-angular2.png")
                 );
 
                 Project p5 = new Project(
@@ -65,7 +65,7 @@ public class ProyectoConfig {
                         null,
                         "App de películas con React",
                         "Explorador de películas consumiendo la API de TheMovieDB.",
-                        "React, Axios, TheMovieDB",
+                        "React, CSS, API-TheMovieDB",
                         "https://github.com/TeoLoop/AppPeliculas-react",
                         List.of("/peliculas.png")
                 );
@@ -85,7 +85,7 @@ public class ProyectoConfig {
                         "Portafolio web desarrollado con React y Java Spring Boot, donde presento mis proyectos como desarrollador FullStack. Incluye integración con una API propia, diseño moderno y enfoque responsive.",
                         "React, Java, Spring Boot, CSS, HTML, H2",
                         "https://github.com/TeoLoop/PortfolioMateoLopez",
-                        List.of("/portafolio.png")
+                        List.of("/portafolio1.png", "/portafolio2.png")
                 );
 
                 repository.saveAll(List.of(p1, p2, p3, p4, p5, p6, p7));
