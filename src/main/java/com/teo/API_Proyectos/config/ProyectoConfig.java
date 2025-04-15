@@ -85,7 +85,7 @@ public class ProyectoConfig {
                         "Portafolio web desarrollado con React y Java Spring Boot, donde presento mis proyectos como desarrollador FullStack. Incluye integración con una API propia, diseño moderno y enfoque responsive.",
                         "React, Java, Spring Boot, CSS, HTML, H2",
                         "https://github.com/TeoLoop/PortfolioMateoLopez",
-                        List.of("/portafolio1.png", "/portafolio2.png")
+                        List.of("/portafolio1.png", "/portafolio2.png", "/portafolio3.png")
                 );
 
                 repository.saveAll(List.of(p1, p2, p3, p4, p5, p6, p7, p8));
